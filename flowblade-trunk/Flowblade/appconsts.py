@@ -67,7 +67,7 @@ PROP_EXPRESSION = 2
 
 # Display heights for tracks and timeline.
 TRACK_HEIGHT_NORMAL = 50 # track height in canvas and column
-TRACK_HEIGHT_SMALL = 25 # track height in canvas and column
+TRACK_HEIGHT_SMALL = 25  # track height in canvas and column
 TRACK_HEIGHT_SMALLEST = 25 # maybe remove this as it is no longer used
 TLINE_HEIGHT = 260
 
@@ -102,6 +102,8 @@ EXTRA_EDITOR = "extraeditor"
 
 # Available tracks maximum for Flowblade
 MAX_TRACKS = 9
+INIT_V_TRACKS = 5
+INIT_A_TRACKS = 4
 
 # Thumbnail image dimensions
 THUMB_WIDTH = 116
@@ -218,3 +220,29 @@ POINTER_CONTEXT_COMPOSITOR_END_DRAG_RIGHT = 5
 POINTER_CONTEXT_TRIM_LEFT = 6
 POINTER_CONTEXT_TRIM_RIGHT = 7
 POINTER_CONTEXT_BOX_SIDEWAYS = 8
+
+# Timeline tool ids. NOTE: a tool can map to 1 or more editmodes and even module specified submodes, depending on complexity of edit actions.
+TLINE_TOOL_INSERT = 1
+TLINE_TOOL_OVERWRITE = 2
+TLINE_TOOL_TRIM = 3
+TLINE_TOOL_ROLL = 4
+TLINE_TOOL_SLIP = 5
+TLINE_TOOL_SPACER = 6
+TLINE_TOOL_BOX = 7
+TLINE_TOOL_RIPPLE_TRIM = 8
+TLINE_TOOL_CUT = 9
+TLINE_TOOL_KFTOOL = 10
+
+# Monitor switch events
+MONITOR_TLINE_BUTTON_PRESSED = 1
+MONITOR_CLIP_BUTTON_PRESSED = 2
+
+# Appliation thmes and colors preference
+FLOWBLADE_THEME  = 0
+DARK_THEME  = 1
+LIGHT_THEME  = 2
+
+# DND actions
+DND_ALWAYS_OVERWRITE = 0
+DND_OVERWRITE_NON_V1 = 1
+DND_ALWAYS_INSERT = 2
